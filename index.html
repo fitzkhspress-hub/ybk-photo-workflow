@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Photo Workflow Check</title>
+<link rel="stylesheet" href="styles.css?v=2">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand"><span class="badge" aria-hidden="true">PW</span><span>2027 Yearbook · Photo Workflow</span></div>
+  <button type="button" id="resetBtn" class="btn ghost small" hidden>Start over</button>
+</header>
+<div id="confirm" class="confirm" role="alertdialog" aria-labelledby="confirmTitle" aria-describedby="confirmText" hidden>
+  <p id="confirmTitle"><strong>Start over?</strong></p>
+  <p id="confirmText">This clears your answers, name, completion status and certificate.</p>
+  <div class="row">
+    <button type="button" id="confirmYes" class="btn danger">Yes, start over</button>
+    <button type="button" id="confirmNo" class="btn ghost">Cancel</button>
+  </div>
+</div>
+<main id="app" class="card" tabindex="-1"></main>
+<script src="app.js?v=2"></script>
+</body>
+</html>
